@@ -3,7 +3,7 @@
  *================================================================*/
 
 .banner {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
     padding: 0.5em;
@@ -27,15 +27,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
     background: none,
     radial-gradient(62vh 150vh at 0 -50vh, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
     radial-gradient(62vh 150vh at 100% -50vh, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
 }
 
+@media (max-width: 576px) {
+    #application {
+        min-height: 100vh;
+    }
+}
+
+
 #application .container {
-    position: absolute;
-    padding: 2em;
+    /*position: absolute;*/
+    padding: 0em 2em;
 }
 
 #application div[data-active="false"] {
@@ -53,8 +60,10 @@
 }
 
 #application .box .caption {
-    position: absolute;
-    right: 0;
-    bottom: 0.2em;
-    left: 0;
+    padding: 1em 0;
+}
+#signout{
+    width: 100%;
+    background: #1e4e52;
+    color: white;
 }

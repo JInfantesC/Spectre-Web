@@ -23,19 +23,12 @@
         <script defer src="plugins/jquery/jquery.min.js"></script>
     </head>
 
-    <body>
-        <div class="banner">
-            <div class="container">
-                <h4>Alpha Version</h4>
-                <p>You are trying out a pre-release of Spectre's web version.</p>
-                <a href="https://gitlab.com/spectre.app/web/" class="btn btn-transparent">Source Code</a>
-            </div>
-        </div>
-
+    <body>        
+        
         <section id="application">
             <div id="user" class="container" data-active="true">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center box">
+                    <div class="col-lg-6 col-sm-12 text-center box">
                         <i class="fa-duotone fa-user-circle"></i>
                         <hr>
 
@@ -103,15 +96,13 @@
                                 </label>
                             </p>
                             
-                            <p>&nbsp;</p>
-
-                            <p>
+                            <p class="row row-cols-4 justify-content-center">
                                 <input type="radio" name="sitePurpose" id="sitePurposePassword" value="com.lyndir.masterpassword">
-                                <label for="sitePurposePassword">Site Password</label>
+                                <label for="sitePurposePassword" class="col-sm-12">Site Password</label>
                                 <input type="radio" name="sitePurpose" id="sitePurposeLogin" value="com.lyndir.masterpassword.login">
-                                <label for="sitePurposeLogin">Site Login Name</label>
+                                <label for="sitePurposeLogin" class="col-sm-12">Site Login Name</label>
                                 <input type="radio" name="sitePurpose" id="sitePurposeAnswer" value="com.lyndir.masterpassword.answer">
-                                <label for="sitePurposeAnswer">Site Security Answer</label>
+                                <label for="sitePurposeAnswer" class="col-sm-12">Site Security Answer</label>
                             </p>
 
                             <hr>
@@ -162,6 +153,13 @@
             </div>
         </section>
 
+        <div class="banner">
+            <div class="container">
+                <h4>Alpha Version</h4>
+                <p>You are trying out a pre-release of Spectre's web version.</p>
+                <a href="https://gitlab.com/spectre.app/web/" class="btn btn-transparent">Source Code</a>
+            </div>
+        </div>
         <footer id="footer">
             <div class="container">
                 <div class="row wow fadeInUp" data-wow-duration="500ms">

@@ -190,6 +190,19 @@ input, textarea, select, button, a.btn, input[type=radio]+label {
     box-shadow: 0 0 8px var(--shadow);
 }
 
+@media (min-width: 576px) {
+    input[type=radio]+label {
+        width: auto;
+    }
+}
+@media (max-width: 576px) {
+    input[type=radio]+label {
+        width: -moz-available;
+        width:-webkit-fill-available;
+    }
+}
+
+
 button input[readonly] {
     width: calc(100% - 3ex);
     padding: 0;
@@ -338,7 +351,7 @@ section.lit {
 
 @media (max-width: 576px) {
     .box {
-        padding: 1em;
+        padding: 1em 1em 2em 1em;
     }
 }
 
@@ -488,7 +501,7 @@ label.box:hover, label.box[checked] {
 
 @media (max-width: 576px) {
     .box {
-        padding: 1em;
+        padding: 1em 1em 2em 1em;
     }
 }
 
@@ -630,7 +643,7 @@ html[data-scroll]:not([data-scroll="hero"]) #navigation .cta {
 #footer {
     position: relative;
     overflow: hidden;
-    padding-top: 4em;
+    padding-top: 1em;
     background: #083E55;
 }
 
