@@ -1,0 +1,16 @@
+{
+    "name": "Spectre.wp",
+    "short_name": "spectre.pw",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#183948",
+    "theme_color": "#3E8989",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "images/spectre.png",
+        "type": "image/png"
+      }
+    ]
+  }
+  
